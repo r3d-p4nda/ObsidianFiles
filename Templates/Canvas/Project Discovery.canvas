@@ -1,0 +1,52 @@
+{
+  "nodes": [
+    {
+      "id": "goal",
+      "type": "text",
+      "text": "Project Goal\nWhat outcome are we driving?",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "id": "constraints",
+      "type": "text",
+      "text": "Constraints\nTime, scope, dependencies",
+      "x": 420,
+      "y": 0,
+      "width": 320,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "actions",
+      "type": "text",
+      "text": "Next Actions\n1)\n2)\n3)",
+      "x": 210,
+      "y": 260,
+      "width": 360,
+      "height": 180,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "goal",
+      "fromSide": "bottom",
+      "toNode": "actions",
+      "toSide": "top",
+      "label": "drives"
+    },
+    {
+      "id": "e2",
+      "fromNode": "constraints",
+      "fromSide": "bottom",
+      "toNode": "actions",
+      "toSide": "top",
+      "label": "limits"
+    }
+  ]
+}
